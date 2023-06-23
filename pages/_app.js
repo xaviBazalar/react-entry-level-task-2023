@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../components/muiTheme';
+import './customStyles.css'
 
 function MyApp({ Component, pageProps }) {
     return (

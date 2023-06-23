@@ -1,4 +1,4 @@
-import {useMemo, useState} from "react";
+import { useMemo, useState} from "react";
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
 import {MainContent} from "../components/MainContent";
@@ -14,9 +14,11 @@ export default function Home(){
         setTotalGames(response.data.games_list.length)
     };
 
+    
     const addTodo = useMemo(() => {
         fetchData()
     }, []);
+    
     return (
         <>
         <div>
